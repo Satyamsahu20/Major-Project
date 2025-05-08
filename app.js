@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, "/public")))
 
 // // home route
 app.get("/", (req, res) => {
-    res.send("Hii, I am root")
+    res.redirect("/listings");
 })
 
 const store = MongoStore.create({
